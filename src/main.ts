@@ -22,6 +22,9 @@ const port = process.env.PORT || 3000;
 app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
+app.get("/health", (req: Request, res: Response) => {
+  res.send("Express + TypeScript Server");
+});
 
 /* Start the Express app and listen
  for incoming requests on the specified port */
